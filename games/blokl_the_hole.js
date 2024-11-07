@@ -1,9 +1,9 @@
 /*
 @title: blokl the hole
-@author:  chase .A
 @tags: ['puzzle']
-@addedOn: 2024-05-02
 @img: ""
+@addedOn: 2024-05-02
+@author:  chase .A
 
 
 */

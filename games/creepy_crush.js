@@ -1,8 +1,8 @@
 /*
 @title: creepy_crush
-@author: issac
-@tags: ['puzzle']
+@tags: ['logic', 'advanced']
 @addedOn: 2022-11-27
+@author: issac
 
 INSTRUCTIONS:
 

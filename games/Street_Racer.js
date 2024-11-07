@@ -1,8 +1,8 @@
 /*
 @title: Street Racer
-@author: Cdogo
-@tags: ['action']
+@tags: ['dodge']
 @addedOn: 2023-02-24
+@author: Cdogo
 
 Instructions:
 

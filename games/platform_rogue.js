@@ -1,8 +1,8 @@
 /*
 @title: platform_rogue
-@author: @farreltobias
-@tags: []
+@tags: ['advanced']
 @addedOn: 2022-08-22
+@author: @farreltobias
 */
 
 const createArray = (size) => [...Array(size).keys()];

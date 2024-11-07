@@ -1,8 +1,8 @@
 /*
 @title: kindless
-@author: Ishan (@quackduck)
-@tags: []
+@tags: ['advanced']
 @addedOn: 2022-07-26
+@author: Ishan (@quackduck)
 
 This game has WASD controls, can be quite mean, and may or may not have a cheat code.
 

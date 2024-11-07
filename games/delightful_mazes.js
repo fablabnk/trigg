@@ -1,8 +1,8 @@
 /*
 @title: delightful_mazes
-@author: hephaestushex
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2022-11-15
+@author: hephaestushex
 */
 
 const player = "p";

@@ -2,7 +2,7 @@
 /* 
 @title: calculator_puzzle
 @author: aboutdavid
-@tags: ['puzzle']
+@tags: ['thematic-puzzle']
 @addedOn: 2023-04-25
 */
 

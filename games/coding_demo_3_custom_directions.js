@@ -1,8 +1,8 @@
 /*
 @title: Coding Demo 3: Custom Directional Solids
-@author: Leonard (Omay)
-@tags: []
+@tags: ['demo', 'hackable', 'beginner']
 @addedOn: 2022-10-20
+@author: Leonard (Omay)
 Go to line 120 for the important code of this demo.
 Change the variable "level" on line 104 to 1 to get the demo map.
 */

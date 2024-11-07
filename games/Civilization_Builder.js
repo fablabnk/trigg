@@ -2,7 +2,7 @@
 /* 
 @title: Civilization_Builder
 @author: Ivan S
-@tags: []
+@tags: ['advanced']
 @addedOn: 2023-06-08
 */
 

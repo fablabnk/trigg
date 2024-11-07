@@ -1,8 +1,8 @@
 /*
 @title: 256
-@author: jzhao
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-08-22
+@author: jzhao
 */
 
 const b2 = "1";

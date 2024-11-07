@@ -1,8 +1,8 @@
 /*
 @title: cube_escape
-@author: marios_mitsios
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2023-01-07
+@author: marios_mitsios
 */
 
 // !!! README !!!

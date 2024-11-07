@@ -1,7 +1,7 @@
 /*
 @title: Tic-Tac-Toe
 @author: bochk0
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2024-07-17
 */
 

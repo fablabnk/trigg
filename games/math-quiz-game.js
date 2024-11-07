@@ -1,8 +1,8 @@
 /*
 @title: Math Quiz Game
-@author: Zigao Wang
-@tags: ['utility','multiplayer']
+@tags: ['math', 'two-players', 'quiz']
 @addedOn: 2024-07-24
+@author: Zigao Wang
 */
 
 const leftPlayer = "L";

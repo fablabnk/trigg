@@ -1,8 +1,8 @@
 /*
 @title: Puzzle_Game
-@author: Amelia
-@tags: ['puzzle','timed']
+@tags: ['timer-puzzle']
 @addedOn: 2022-10-20
+@author: Amelia
 */
 
 const player = "p";

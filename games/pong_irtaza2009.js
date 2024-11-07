@@ -1,8 +1,8 @@
 /*
 @title: Pong
-@author: Irtaza2009
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2024-07-01
+@author: Irtaza2009
 */
 
 const player1 = "1";

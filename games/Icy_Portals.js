@@ -1,8 +1,8 @@
 /*
 @title: Icy Portals
-@author: Jonathan La
-@tags: ['puzzle']
+@tags: ['energy-control']
 @addedOn: 2022-12-02
+@author: Jonathan La
 */
 
 let moves = 20;

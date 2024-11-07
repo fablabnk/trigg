@@ -1,8 +1,8 @@
 /*
 @title: Push the Blocks
-@author: aidan
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-11-10
+@author: aidan
 
 Instructions:
 

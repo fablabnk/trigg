@@ -1,8 +1,8 @@
 /*
 @title: snake_game
-@author: souvikpal2000
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-09-13
+@author: souvikpal2000
 */
 
 /*

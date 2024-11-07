@@ -1,8 +1,8 @@
 /*
 @title: Cave-Quest
-@author: OHIO-MAN
-@tags: ['puzzle']
+@tags: ['energy-control']
 @addedOn: 2023-02-18
+@author: OHIO-MAN
 */
 /*
 Explore caves, watch out for traps, solve puzzles.

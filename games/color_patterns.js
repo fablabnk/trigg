@@ -1,8 +1,8 @@
 /*
 @title: color_patterns
-@author: brian
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2022-07-14
+@author: brian
 
 Instructions:
 

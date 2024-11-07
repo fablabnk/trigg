@@ -2,7 +2,7 @@
 /* 
 @title: FOOD-CATCH
 @author: Jakob
-@tags: []
+@tags: ['catch']
 @addedOn: 2023-09-02
 */
 

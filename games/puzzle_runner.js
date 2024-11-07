@@ -1,8 +1,8 @@
 /*
 @title: puzzle_runner
-@author: Shanath
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-10-12
+@author: Shanath
 
 In Puzzle Runner, you must navigate through the maze while 
 pushing a box. If you get through all the levels, you win! 

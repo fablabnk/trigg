@@ -1,8 +1,8 @@
 /*
 @title: Maze Runner
-@author: Alan Alwakeel, Samuel Sapatla, Suhaan Palakamshetty, Martin Beythoon
-@tags: ['puzzle']
+@tags: ['energy-control']
 @addedOn: 2022-12-10
+@author: Alan Alwakeel, Samuel Sapatla, Suhaan Palakamshetty, Martin Beythoon
 */
 
 const player = 'p'

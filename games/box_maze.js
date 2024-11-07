@@ -1,8 +1,8 @@
 /*
 @title: Box_Maze
-@author: Boden
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-10-19
+@author: Boden
 */
 /*
   INSTRUCTIONS

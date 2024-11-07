@@ -1,8 +1,8 @@
 /*
-@title: maze-eye
-@author: acon
-@tags: ['action']
+@tags: ['dodge']
 @addedOn: 2023-12-23
+@title: maze-eye 
+@author: acon
 
 a maze, but dodge monsters at the same time!
 */

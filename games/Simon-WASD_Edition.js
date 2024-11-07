@@ -1,8 +1,8 @@
 /*
 @title: Simon-WASD_Edition
-@author: Eli Coustan
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-11-13
+@author: Eli Coustan
 @github: edcous
 
 Instructions:

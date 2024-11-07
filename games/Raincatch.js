@@ -1,7 +1,7 @@
 /*
 @title: Raincatch
 @author: A Malladi
-@tags: ['endless']
+@tags: ['catch']
 @addedOn: 2023-12-31
 */
 

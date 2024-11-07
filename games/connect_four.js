@@ -1,8 +1,8 @@
 /*
 @title: connect_four
-@author: sam liu
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-08-29
+@author: sam liu
 
 The typical Connect Four game.
 

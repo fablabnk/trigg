@@ -2,7 +2,7 @@
 /* 
 @title: StickRunner
 @author: Shahzeb Wali
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2023-12-10
 */
 

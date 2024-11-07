@@ -1,7 +1,7 @@
 /*
 @title: Get 500 Coins
 @author: oliverlinux
-@tags: ['timed']
+@tags: ["time-waster"]
 @addedOn: 2024-06-19
 */
 let jumped = 0

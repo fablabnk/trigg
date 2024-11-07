@@ -1,8 +1,8 @@
 /*
 @title: tetris
-@author: neesh
-@tags: ["endless" , "puzzle" , "retro"]
+@tags: ['classic']
 @addedOn: 2022-09-12
+@author: neesh
 */
 
 const rows = 12;

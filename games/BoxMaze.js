@@ -2,7 +2,7 @@
 /* 
 @title: BoxMaze
 @author: Kalo
-@tags: ["puzzle" , "maze"]
+@tags: ['logic']
 @addedOn: 2023-11-13
 */
 

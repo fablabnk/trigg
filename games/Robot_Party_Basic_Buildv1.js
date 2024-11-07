@@ -1,8 +1,8 @@
 /*
 @title: Robot_Party | Basic Build v1
-@author: Gam3rrXD
-@tags: ['puzzle', 'timed']
+@tags: ['puzzle-score']
 @addedOn: 2022-12-20
+@author: Gam3rrXD
 */
 function reset(){
     min = 0;

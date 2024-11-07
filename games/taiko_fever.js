@@ -1,9 +1,10 @@
 /*
-@title: untitled taiko game
-@author: Joey Lent
-@tags: ['music']
 @addedOn: 2023-01-10
+@title: untitled taiko game
+@tags: ['advanced', 'music']
 @img: ""
+@addedOn: 2023-01-10
+@author: Joey Lent
 */
 
 /**************************

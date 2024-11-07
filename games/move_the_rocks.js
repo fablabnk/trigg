@@ -2,7 +2,7 @@
 /* 
 @title: move_the_rocks
 @author: playfun24
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2023-12-21
 */
 

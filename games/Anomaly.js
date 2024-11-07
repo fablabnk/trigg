@@ -1,12 +1,12 @@
 /*
-@title: Anomaly
-@author: Liam
-@tags: []
-@addedOn: 2024-05-20
 First time? Check out the tutorial game:
 https://sprig.hackclub.com/gallery/getting_started
 
+@title: Anomaly
+@author: Liam
+@tags: []
 @img: ""
+@addedOn: 2024-05-20
 */
 
 const dirtgoal = "u"

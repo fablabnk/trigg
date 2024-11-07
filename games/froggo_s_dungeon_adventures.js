@@ -1,8 +1,8 @@
 /*
-@title: Froggo's Dunegon Adventures
-@author: amuseee (slack
-@tags: ['adventure']
+@tags: ['dungeon']
 @addedOn: 2023-11-06
+@title: Froggo's Dunegon Adventures
+@author: amuseee (slack: @vik/vikshar rajesh)
 Keys: 
 - w/a/s/d to move, J to interaction/attack, k to restart
 objective:

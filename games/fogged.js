@@ -1,8 +1,8 @@
 /*
 @title: fogged
-@author: Jay Reddy
-@tags: []
+@tags: ['WIP']
 @addedOn: 2022-08-15
+@author: Jay Reddy
 
 Move around with w, a, s, d
 

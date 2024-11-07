@@ -2,7 +2,7 @@
 /* 
 @title: for_Squiggly_myLost_worm
 @author: Jeremiah Sung
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-10-19
 */
 

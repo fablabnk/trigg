@@ -2,7 +2,7 @@
 /* 
 @title: Golem-Rush
 @author: Spllit1
-@tags: ['action']
+@tags: ['dodge']
 @addedOn: 2023-05-22
 */
 

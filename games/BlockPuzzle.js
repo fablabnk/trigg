@@ -1,12 +1,12 @@
 /*
-@title: BlockPuzzle
-@author: Konstantinos Fragkoulis
-@tags: []
-@addedOn: 2024-06-06
 First time? Check out the tutorial game:
 https://sprig.hackclub.com/gallery/getting_started
 
+@title: BlockPuzzle
+@author: Konstantinos Fragkoulis
+@tags: []
 @img: ""
+@addedOn: 2024-06-06
 */
 
 const player = "p"

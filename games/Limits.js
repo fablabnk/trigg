@@ -1,8 +1,8 @@
 /*
 @title: Limits
-@author: Nathan Pease
-@tags: ['puzzle']
+@tags: ['energy-control']
 @addedOn: 2022-09-15
+@author: Nathan Pease
 */
 
 /*

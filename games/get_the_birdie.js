@@ -1,8 +1,8 @@
 /*
 @title: Get_the_birdie!
-@author: Sophie
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-12-23
+@author: Sophie
 */
 
 

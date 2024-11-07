@@ -2,7 +2,7 @@
 /* 
 @title: Eat_&_Dont_Be_Eaten
 @author: Nathan Man
-@tags: []
+@tags: ['catch']
 @addedOn: 2023-08-30
 */
 

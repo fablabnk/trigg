@@ -7,8 +7,6 @@ interface InlineInputProps {
 	onChange: (value: string) => void
 	placeholder: string;
 	autofocus?: boolean;
-	// This was introduced to make sure it looks the same even when the user shouldn't be able to edit the name of the game
-	disabled?: boolean;
 }
 
 export default function InlineInput(props: InlineInputProps) {
@@ -32,7 +30,6 @@ export default function InlineInput(props: InlineInputProps) {
 				onInput={event => props.onChange(event.currentTarget.value)}
 				style={{ width: width.value + 30 }}
 				placeholder={props.placeholder}
-				disabled={props.disabled === true}
 			/>
 			<span ref={measureRef} class={styles.measure} aria-hidden='true'>
 				{props.value || props.placeholder}

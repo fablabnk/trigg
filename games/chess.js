@@ -1,8 +1,8 @@
 /*
 @title: Chess
-@author: Thomas Stubblefield
-@tags: ['multiplayer','retro']
+@tags: ['multiplayer', 'classic']
 @addedOn: 2022-10-31
+@author: Thomas Stubblefield
 
 Controls: Use WASD to move your cursor, J to pick up a piece, and K to place it. 
 Additionally, you can use L to drop a piece (or deselect)

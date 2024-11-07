@@ -1,9 +1,9 @@
 /*
 @title: EARTH TAKEOVER (maze)
-@author: @SeanK
 @tags: []
-@addedOn: 2024-4-20
 @img: ""
+@addedOn: 2024-4-20
+@author: @SeanK
 
 
 

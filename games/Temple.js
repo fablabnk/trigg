@@ -1,8 +1,8 @@
 /*
 @title: Temple
-@author: Wynston
-@tags: ['puzzle']
+@tags: ['puzzle-npc']
 @addedOn: 2022-12-07
+@author: Wynston
 */
 
 

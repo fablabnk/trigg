@@ -1,8 +1,8 @@
 /*
 @title: Pac-Man But With Stars
-@author: Austin
-@tags: ['strategy','retro']
+@tags: ['classic', 'strategy']
 @addedOn: 2022-12-01
+@author: Austin
 
 controls: 
 W, A, S, D - movement

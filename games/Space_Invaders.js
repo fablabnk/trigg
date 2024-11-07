@@ -1,7 +1,7 @@
 /*
 @title: OG Space Invaders
 @author: Atharva Malik
-@tags: ['real-time','action']
+@tags: ['space', 'invaders', 'space invaders', 'invader']
 @addedOn: 2024-07-11
 
 Controls:

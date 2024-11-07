@@ -1,8 +1,8 @@
 /*
 @title: inconsequential leveldungeon
-@author: periwinkle
-@tags: ['adventure']
+@tags: ['dungeon']
 @addedOn: 2022-11-06
+@author: periwinkle
 */
 const playerL = "l";
 const playerR = "r";

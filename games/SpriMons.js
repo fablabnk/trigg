@@ -1,7 +1,7 @@
 /*
 @title: SpriMons
-@author: Bartosz Budnik
-@tags: ['role-playing']
+@author: Bartosz Budnik 
+@tags: ['rpg', 'arcade']
 @addedOn: 2024-07-30
 */
 

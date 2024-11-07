@@ -1,12 +1,12 @@
 /*
-@title: escape from ghost maze
-@author: Jlee123
-@tags: ['puzzle']
-@addedOn: 2024-05-10
 First time? Check out the tutorial game:
 https://sprig.hackclub.com/gallery/getting_started
 
+@title: escape from ghost maze
+@author: Jlee123
+@tags: ['puzzle']
 @img: ""
+@addedOn: 2024-05-10
 */
 
 const player = "p"

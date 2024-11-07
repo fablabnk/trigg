@@ -1,8 +1,8 @@
 /*
 @title: confusing_conditions
-@author: Sooraj
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-09-08
+@author: Sooraj
 */
 
 const player = "p";

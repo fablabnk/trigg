@@ -2,8 +2,8 @@
 @title: Snake Feast
 @author: chaste
 @tags: []
-@addedOn: 2024-06-07
 @img: ""
+@addedOn: 2024-06-07
 */
 
 const snakeHead = "H";

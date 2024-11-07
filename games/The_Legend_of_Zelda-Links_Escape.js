@@ -2,7 +2,7 @@
 /* 
 @title: The_Legend_of_Zelda-Links_Escape
 @author: ItzHex
-@tags: []
+@tags: ['advanced']
 @addedOn: 2023-08-28
 */
 

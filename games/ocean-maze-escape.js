@@ -2,7 +2,7 @@
 /* 
 @title: ocean-maze-escape
 @author: michael barrera
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-10-13
 */
 

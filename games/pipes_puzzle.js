@@ -1,8 +1,8 @@
 /*
 @title: Pipes Puzzle
-@author: RayhanADev
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2022-10-14
+@author: RayhanADev
 */
 
 /**

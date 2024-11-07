@@ -7,9 +7,9 @@
 /*
 @title: Top_Hat_Turtles
 @author: Dreck Yam
-@tags: ['multiplayer']
-@addedOn: 2024-05-29
 @img: ""
+@tags: ['multiplayer', 'cooperative']
+@addedOn: 2024-05-29
 */
 
 const melody = tune`

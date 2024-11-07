@@ -1,8 +1,8 @@
 /*
 @title: FallingTiles
 @author: Rishabh R
-@tags: []
 @addedOn: 2024-09-03
+@tags: []
 */
 const tile = "t";
 const background = "b";

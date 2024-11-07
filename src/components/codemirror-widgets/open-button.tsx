@@ -14,7 +14,7 @@ export default function OpenButton(props: OpenButtonProps) {
 	return (
 		<button
 			class={styles.openButton}
-			onClick={async () => {
+			onClick={async (event) => {
 				if (!codeMirror.value) return
 
 

@@ -1,8 +1,8 @@
 /*
 @title: LUCK
-@author: Ethan
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-09-28
+@author: Ethan
 */
 
 const player = "p";

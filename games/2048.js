@@ -1,8 +1,8 @@
 /*
 @title: 2048
-@author: linkai101
-@tags: ["puzzle" , "endless"]
+@tags: ['classic']
 @addedOn: 2022-09-16
+@author: linkai101
 */
 
 const empty = "-"

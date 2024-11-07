@@ -1,8 +1,8 @@
 /*
 @title: Burger_Maker
-@author: Captain_AJ
-@tags: ['puzzle']
+@tags: ['thematic-puzzle']
 @addedOn: 2022-12-28
+@author: Captain_AJ
 */
 
 // Version: 1.2

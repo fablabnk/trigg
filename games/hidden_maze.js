@@ -2,7 +2,7 @@
 /* 
 @title: hidden_maze
 @author: Rylan Berry
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2023-05-06
 */
 

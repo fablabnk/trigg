@@ -1,8 +1,8 @@
 /*
 @title: cricket_frenzy
-@author: aryan.k
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-12-10
+@author: aryan.k
 */
 const player = "p";
 const box = "b";

@@ -2,7 +2,7 @@
 /* 
 @title: Two_Player_Tetris
 @author: Spectral
-@tags: ['multiplayer','retro']
+@tags: ['classic', 'multiplayer']
 @addedOn: 2023-09-11
 */
 

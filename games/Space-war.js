@@ -2,7 +2,7 @@
 /* 
 @title: Space-war
 @author: Yash
-@tags: []
+@tags: ['catch']
 @addedOn: 2023-10-02
 */
 

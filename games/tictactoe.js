@@ -1,8 +1,8 @@
 /*
 @title: 2 player tic-tac-toe
-@author: reesericci
-@tags: ['multiplayer','retro']
+@tags: ['classic', 'multiplayer']
 @addedOn: 2022-09-06
+@author: reesericci
 
 "a", "s", and "d" are your controls.
 

@@ -1,8 +1,8 @@
 /*
 @title: Labyrinth
-@author: DorukSarpAlwaysStrikesBack!
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-02-12
+@author: DorukSarpAlwaysStrikesBack!
 */
 
 const player = "p";

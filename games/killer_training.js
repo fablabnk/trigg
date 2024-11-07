@@ -1,8 +1,8 @@
 /*
 @title: killer_training
-@author: jakjakob
-@tags: ['puzzle','timed']
+@tags: ['timer-puzzle']
 @addedOn: 2023-09-16
+@author: jakjakob
 
 version:
 1.1.0

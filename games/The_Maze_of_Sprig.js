@@ -1,8 +1,8 @@
 /*
 @title: The Maze of Sprig
-@author: SahilD
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-02-14
+@author: SahilD
 */
 /*
 instructions

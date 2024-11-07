@@ -1,8 +1,8 @@
 /*
 @title: Bolt Battle
-@author: Arnav Ambre
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-10-10
+@author: Arnav Ambre
 
 INSTRUCTIONS:
 Use WASD to move the character to push the lighting bolts onto the batteries.

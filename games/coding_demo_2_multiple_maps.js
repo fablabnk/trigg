@@ -1,8 +1,8 @@
 /*
 @title: Coding Demo 2 - Dual Maps
-@author: Leonard Maculo
-@tags: []
+@tags: ['demo', 'hackable', 'beginner']
 @addedOn: 2022-09-13
+@author: Leonard Maculo
 
 Use the function addMap to add a background or another layer.
 ex:

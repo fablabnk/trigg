@@ -1,8 +1,8 @@
 /*
 @title: 15 puzzle
-@author: maggie
-@tags: ["puzzle"]
+@tags: ['advanced']
 @addedOn: 2022-07-18
+@author: maggie
 
 INSTRUCTIONS:
 use WASD to move squares next to the empty square.

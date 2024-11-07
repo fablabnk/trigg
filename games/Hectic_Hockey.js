@@ -1,8 +1,8 @@
 /*
 @title: Hectic Hockey
-@author: Colton
-@tags: ['action']
+@tags: ['dodge']
 @addedOn: 2022-10-12
+@author: Colton
 
 Instructions:
 WASD to control your player

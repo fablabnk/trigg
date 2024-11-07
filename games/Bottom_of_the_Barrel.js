@@ -1,8 +1,8 @@
 /*
 @title: Bottom_of_the_Barrel
-@author: Ozfolo
-@tags: ['strategy']
+@tags: ['advanced', 'strategy']
 @addedOn: 2022-12-01
+@author: Ozfolo
 */
 /*
 Controls: A and D for moving in game, WASD for navigating menus, J for select, 

@@ -1,8 +1,8 @@
 /*
 @title: Mandelbrot
-@author: Henry
-@tags: ['sandbox','simulation']
+@tags: ['sandbox', 'simulation', 'hackable']
 @addedOn: 2022-09-14
+@author: Henry
 Instructions:
 Explore the Mandelbrot set!
 Use W, A, S, D to move around

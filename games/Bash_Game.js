@@ -2,7 +2,7 @@
 /* 
 @title: Bash_Game
 @author: WelchJ
-@tags: []
+@tags: ['choice']
 @addedOn: 2023-04-28
 */
 

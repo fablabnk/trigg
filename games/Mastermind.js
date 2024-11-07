@@ -1,8 +1,8 @@
 /*
 @title: Mastermind
-@author: Leonard (Omay)
-@tags: ['puzzle','retro']
+@tags: ['logic', 'classic']
 @addedOn: 2022-11-14
+@author: Leonard (Omay)
 
 W and S for color selection, A and D for position selection
 I to place

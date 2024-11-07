@@ -1,8 +1,8 @@
 /*
 @title: Lava the impossible maze
-@author: Augustin Z Youtube-@Aaron Dragonheart
-@tags: ['puzzle','timed']
+@tags: ['timer-puzzle']
 @addedOn: 2022-12-21
+@author: Augustin Z Youtube-@Aaron Dragonheart 
 Inspiration: Game: Treasure_hunt
 */
 const melody = tune`

@@ -1,9 +1,9 @@
 //
 /*
-@title: Alien_Attack
-@author: whatware
+  @title: Alien_Attack
 @tags: []
 @addedOn: 2023-03-15
+  @author: whatware
 */
 
 const player = "p"

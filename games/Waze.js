@@ -2,9 +2,9 @@
 
 /*
 @title: Waze
-@author: DragonRoyal
-@tags: ['action','survival']
+@tags: ['advanced','shooter','zombie']
 @addedOn: 2024-07-17
+@author: DragonRoyal
 
 INSTRUCTIONS:
 W A S D to move the character around, i to shoot the zombies

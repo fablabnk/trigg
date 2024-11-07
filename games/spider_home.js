@@ -1,8 +1,8 @@
 /*
 @title: spider_home
-@author: usermaatre setepenre
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-10-09
+@author: usermaatre setepenre
 */
 
 // define the sprites in our game

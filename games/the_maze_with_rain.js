@@ -1,7 +1,7 @@
 /*
 @title: the maze with metors
 @author: Daksh Thapar (DakshRocks21/dak5h.exe)
-@tags: ['puzzle']
+@tags: ["maze", "obstacle"]
 @addedOn: 2024-08-15
 */
 

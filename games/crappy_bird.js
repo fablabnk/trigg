@@ -1,8 +1,8 @@
 /*
 @title: crappy_bird
-@author: ced
-@tags: ['endless','retro']
+@tags: ['classic', 'endless']
 @addedOn: 2022-07-14
+@author: ced
 */
 
 const NORMAL_TICK_FREQ = 200;

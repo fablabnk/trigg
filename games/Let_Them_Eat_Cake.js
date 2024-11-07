@@ -1,8 +1,8 @@
 /*
 @title: Let_Them_Eat_Cake
-@author: Xander Reyes
-@tags: ['puzzle']
+@tags: ['thematic-puzzle']
 @addedOn: 2023-01-10
+@author: Xander Reyes
 */
 
 

@@ -1,7 +1,7 @@
 /*
 @title: the real football
 @author: nikhil
-@tags: ['sports']
+@tags: ['soccer','football']
 @addedOn: 2024-07-08
 */
 

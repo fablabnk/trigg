@@ -1,8 +1,8 @@
 /*
 @title: Hungry-Ninja
-@author: Prajval Raval
-@tags: []
+@tags: ['']
 @addedOn: 2023-12-19
+@author: Prajval Raval
 
 Instructions:
 WASD to control your player

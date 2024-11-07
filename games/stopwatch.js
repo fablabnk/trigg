@@ -1,8 +1,8 @@
 /*
 @title: Stopwatch
-@author: DominantDuck
-@tags: ['utility','timed']
+@tags: ['utility', 'clock', 'timekeeping']
 @addedOn: 2024-06-26
+@author: DominantDuck
 */
 let startTime = 0;
 let elapsedTime = 0;

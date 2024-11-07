@@ -2,7 +2,7 @@
 /* 
 @title: Sprigressbar
 @author: MathR
-@tags: []
+@tags: ['advanced']
 @addedOn: 2023-08-21
 */
 

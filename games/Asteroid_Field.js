@@ -1,8 +1,8 @@
 /*
 @title: Asteroid Field
-@author: Kaitlyn
-@tags: []
+@tags: ['catch']
 @addedOn: 2022-11-25
+@author: Kaitlyn
 */
   function getRandomInt(min, max) {
   min = Math.ceil(min);

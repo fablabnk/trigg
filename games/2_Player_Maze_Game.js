@@ -2,8 +2,8 @@
 @title: maze_game_starter
 @author: Cheru Berhanu
 @tags: []
-@addedOn: 2023-08-08
 @img: ""
+@addedOn: 2023-08-08
 */
 
 const player = "p";

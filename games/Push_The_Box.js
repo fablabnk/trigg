@@ -2,7 +2,7 @@
 /* 
 @title: Push_The_Box
 @author: Sandy Burger
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-12-07
 */
 

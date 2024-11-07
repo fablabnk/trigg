@@ -1,7 +1,7 @@
 /*
 @title: go_home
 @author: Arthur Beck
-@tags: ['puzzle']
+@tags: ['puzzle', 'advanced']
 @addedOn: 2024-01-25
 */
 

@@ -1,9 +1,9 @@
 /*
+
 @title: Flip a Coin
 @author: Arnav Kumar
-@tags: ['retro']
+@tags: ["coin", "classic"]
 @addedOn: 2024-07-24
-
 */
 let background = "b";
 

@@ -2,8 +2,8 @@
 @title: Basic Tetris
 @author: Ivan-Jehad
 @tags: []
-@addedOn: 2024-06-10
 @img: ""
+@addedOn: 2024-06-10
 */
 
 const empty = "e";

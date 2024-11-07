@@ -1,8 +1,8 @@
 /*
 @title: Stop
-@author: wyn-cmd
-@tags: ['puzzle']
+@tags: ['puzzle-npc']
 @addedOn: 2022-12-07
+@author: wyn-cmd
 */
 
 

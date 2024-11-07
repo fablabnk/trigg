@@ -1,8 +1,8 @@
 /*
 @title: Maze_Runner3
-@author: Charlie
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-03-19
+@author: Charlie
 
 First time? Check out the tutorial game:
 https://sprig.hackclub.com/gallery/getting_started

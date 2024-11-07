@@ -1,8 +1,8 @@
 /*
 @title: Zooter
-@author: PerrinPerson
-@tags: ['action']
+@tags: ['dodge']
 @addedOn: 2022-10-21
+@author: PerrinPerson
 */
 
 const player = "p";

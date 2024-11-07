@@ -2,7 +2,7 @@
 /* 
 @title: bob_and_joe
 @author: aramshiva
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-12-08
 */
 

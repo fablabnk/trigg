@@ -1,8 +1,8 @@
 /*
 @title: Jet_Box
-@author: Hugh Wilks
-@tags: ['puzzle']
+@tags: ['puzzle-score']
 @addedOn: 2022-12-03
+@author: Hugh Wilks
 
 Instructions:
 

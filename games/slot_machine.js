@@ -1,10 +1,10 @@
 /*
 @title: Slot Machine
 @author: Alexander Li
-@tags: ['utility','retro']
-@addedOn: 2024-05-23
 @discord: thefaix.
+@tags: ["classic", "tool"]
 @img: ""
+@addedOn: 2024-05-23
 */
 
 const slot = "s"

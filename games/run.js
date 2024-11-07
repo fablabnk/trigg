@@ -2,7 +2,7 @@
 /* 
 @title: run
 @author: Nguyễn Gia Bách
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2023-07-20
 */
 

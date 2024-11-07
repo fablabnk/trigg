@@ -1,7 +1,7 @@
 /*
 @title: morse on sprig
 @author: mrdarip
-@tags: ['utility']
+@tags: ['keyboard', 'tool']
 @addedOn: 2024-07-28
 */
 

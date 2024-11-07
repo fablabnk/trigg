@@ -1,7 +1,7 @@
 /*
 @title: DogMaster
 @author: Lenochodik
-@tags: ['endless','retro']
+@tags: ['classic', 'endless', 'catch']
 @addedOn: 2024-08-04
 */
 

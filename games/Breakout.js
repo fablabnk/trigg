@@ -1,8 +1,8 @@
 /*
 @title: Breakout
-@author: Holly
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-09-28
+@author: Holly
 */
 
 const playerL = "p";

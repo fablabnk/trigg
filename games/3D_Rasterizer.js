@@ -1,7 +1,7 @@
 /*
 @title: 3d Renderer
 @author: Ruadhan
-@tags: ['3d']
+@tags: ["3d", "render"]
 @addedOn: 2024-08-13
 */
 

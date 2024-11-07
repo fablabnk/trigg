@@ -1,7 +1,7 @@
 /*
 @title: Doomed
 @author: m5kro
-@tags: ['action']
+@tags: ['singleplayer', 'shooter']
 @addedOn: 2024-07-24
 */
 const playerUp = "u";

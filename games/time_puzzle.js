@@ -1,8 +1,8 @@
 /*
 @title: Time puzzle
-@author: Akeell
-@tags: ['puzzle','timed']
+@tags: ['timer-puzzle']
 @addedOn: 2022-10-13
+@author: Akeell
 */
 
 /* intructions: 

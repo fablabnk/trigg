@@ -1,9 +1,9 @@
 /*
 @title: Sokoban Super
 @author: Nimit Vijayvargee
-@tags: ['puzzle']
-@addedOn: 2024-05-30
+@tags: ['sokoban-style']
 @img: ""
+@addedOn: 2024-05-30
 */
 
 const playerup = "u"

@@ -1,7 +1,7 @@
 /*
 @title: Mancala
 @author: Lenochodik
-@tags: ['puzzle','strategy','multiplayer','retro']
+@tags: ['strategy', 'classic', 'multiplayer', 'logic']
 @addedOn: 2024-08-06
 */
 

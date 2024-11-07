@@ -1,7 +1,7 @@
 /*
 @title: MazeMission
 @author: CaitlinOchuwa
-@tags: ['puzzle']
+@tags: ['maze', 'levels']
 @addedOn: 2024-08-06
 
 HOW TO PLAY

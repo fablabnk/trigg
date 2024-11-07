@@ -1,8 +1,8 @@
 /*
 @title: Mystery of scooter
-@author: Lucas
-@tags: []
+@tags: ['WIP']
 @addedOn: 2022-09-08
+@author: Lucas
 */
 
 const player = "p";

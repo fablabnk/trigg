@@ -1,8 +1,8 @@
 /*
 @title: music-be-like
-@author: trueGrand
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2022-12-04
+@author: trueGrand
 
 Instructions:
 

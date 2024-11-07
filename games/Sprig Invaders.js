@@ -1,7 +1,7 @@
 /*
 @title: Sprig Invaders
 @author: Bunnzulu
-@tags: ["retro" , "strategy" , "timed"]
+@tags: []
 @addedOn: 2024-08-13
 */
 

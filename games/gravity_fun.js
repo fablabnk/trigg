@@ -1,8 +1,8 @@
 /*
 @title: gravity_fun
-@author: phantomeniasll
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-12-22
+@author: phantomeniasll
 */
 
 

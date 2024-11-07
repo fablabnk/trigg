@@ -1,8 +1,8 @@
 /*
 @title: racer
-@author: Snow
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2022-11-08
+@author: Snow
 */
 
 // WHEN ON LEVEL SELECT SCREEN: To move to next level, click L. To move to previous level, click J. To select, click I.

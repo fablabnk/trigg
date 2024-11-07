@@ -2,7 +2,7 @@
 /* 
 @title: wham
 @author: Aaman Patnaik
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2023-09-18
 */
 

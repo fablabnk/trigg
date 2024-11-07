@@ -1,8 +1,8 @@
 /*
 @title: ValentinesGame
-@author: Markonije
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2023-02-13
+@author: Markonije
 */
 
 const player1 = "p";

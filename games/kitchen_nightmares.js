@@ -1,9 +1,9 @@
 /*
 @title: Kitchen Nightmares
-@author: Aditya Nair
 @tags: []
-@addedOn: 2024-05-31
 @img: ""
+@addedOn: 2024-05-31
+@author: Aditya Nair
 */
 const background = "b"; 
 const player = "p";

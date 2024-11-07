@@ -1,9 +1,9 @@
 /*
 @title: Pixelated Medieval Times
-@author: TabishAhmad
-@tags: ['role-playing']
-@addedOn: 2024-05-31
+@tags: ['rpg']
 @img: ""
+@addedOn: 2024-05-31
+@author: TabishAhmad
 */
 
 const player = "p";

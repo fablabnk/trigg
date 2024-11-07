@@ -1,8 +1,8 @@
 /*
 @title: Mirror_Mirror
-@author: Benjamin Grelk
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-12-19
+@author: Benjamin Grelk
 */
 
 const player = "p";

@@ -1,7 +1,7 @@
 /*
 @title: Cat Cafe
 @author: Nunu(greatplansahead)
-@tags: ['puzzle']
+@tags: ["portal", "maze", "cute", "cafe", "bubble tea"]
 @addedOn: 2024-08-28
 
 arcade project.

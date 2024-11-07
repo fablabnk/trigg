@@ -1,8 +1,8 @@
 /*
 @title: Maze
-@author: Akeell
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-10-06
+@author: Akeell
 */
 
 /*instructions

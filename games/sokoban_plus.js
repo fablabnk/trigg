@@ -1,8 +1,8 @@
 /*
 @title: Sokoban+
-@author: Leonard (Omay)
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-09-06
+@author: Leonard (Omay)
 
 25 levels
 3 types of boxes and 3 types of goals

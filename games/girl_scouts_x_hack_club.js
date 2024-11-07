@@ -1,8 +1,8 @@
 /*
 @title: girl scouts x hack club
-@author: keira
-@tags: ['utility']
+@tags: ['event']
 @addedOn: 2023-03-13
+@author: keira 
 --horizon sprig workshop led by aileen & keira!--
 
 - hey scout! deliver the girl scout cookies to orpheus! :D

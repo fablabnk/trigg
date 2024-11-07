@@ -519,25 +519,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -17.8054 13.7414 0)
+			(property "Reference" "U2"
+				(at 0 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "MAX98357AETE+"
-				(at -17.8054 -19.2786 0)
+				(at 0 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "QFN50P300X300X80-17N"
+			(property "Footprint" "local:QFN50P300X300X80-17N"
 				(at 0 0 0)
 				(effects
 					(font
@@ -627,8 +625,8 @@
 			)
 			(symbol "MAX98357AETE+_0_0"
 				(rectangle
-					(start -17.78 -15.24)
-					(end 17.78 12.7)
+					(start -17.78 12.7)
+					(end 17.78 -15.24)
 					(stroke
 						(width 0.4064)
 						(type default)
@@ -637,10 +635,12 @@
 						(type background)
 					)
 				)
-				(pin input line
-					(at -22.86 0 0)
+			)
+			(symbol "MAX98357AETE+_1_0"
+				(pin input clock
+					(at -22.86 7.62 0)
 					(length 5.08)
-					(name "DIN"
+					(name "LRC"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -648,78 +648,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 22.86 5.08 180)
-					(length 5.08)
-					(name "OUTN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 22.86 -12.7 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at -22.86 2.54 0)
-					(length 5.08)
-					(name "LRCLK"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 22.86 -12.7 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "15"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -737,42 +665,6 @@
 							)
 						)
 					)
-					(number "16"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 22.86 -10.16 180)
-					(length 5.08)
-					(name "EP"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -22.86 -2.54 0)
-					(length 5.08)
-					(name "GAIN_SLOT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
 					(number "2"
 						(effects
 							(font
@@ -781,10 +673,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 22.86 -12.7 180)
+				(pin input line
+					(at -22.86 2.54 0)
 					(length 5.08)
-					(name "GND"
+					(name "DIN"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -800,9 +692,9 @@
 					)
 				)
 				(pin input line
-					(at -22.86 -5.08 0)
+					(at -22.86 0 0)
 					(length 5.08)
-					(name "~{SD_MODE}"
+					(name "GAIN"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -817,10 +709,46 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 22.86 10.16 180)
+				(pin input line
+					(at -22.86 -2.54 0)
 					(length 5.08)
-					(name "VDD"
+					(name "SD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 -5.08 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 -7.62 0)
+					(length 5.08)
+					(name "Vin"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -835,10 +763,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 22.86 10.16 180)
+				(pin output line
+					(at 22.86 5.08 180)
 					(length 5.08)
-					(name "VDD"
+					(name "-"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -856,7 +784,7 @@
 				(pin output line
 					(at 22.86 2.54 180)
 					(length 5.08)
-					(name "OUTP"
+					(name "+"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -3010,28 +2938,30 @@
 				)
 			)
 		)
-		(symbol "sprig:TFT_MSP1803"
+		(symbol "fab_custom:Adafruit_TFT_ST7735"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 0 0)
+			(property "Reference" "U1"
+				(at 7.62 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "Adafruit_TFT_ST7735"
+				(at 7.62 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "sprig:TFT_MSP1803"
-				(at 11.938 -2.032 0)
+			(property "Footprint" "Library:Generic_1.8Inch_TFT_120x160"
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3040,7 +2970,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 0 0)
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3057,10 +2987,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "TFT_MSP1803_0_1"
+			(symbol "Adafruit_TFT_ST7735_0_1"
 				(rectangle
-					(start 2.54 22.86)
-					(end 21.59 0)
+					(start -6.35 13.97)
+					(end 6.35 -17.78)
 					(stroke
 						(width 0)
 						(type default)
@@ -3070,11 +3000,11 @@
 					)
 				)
 			)
-			(symbol "TFT_MSP1803_1_1"
+			(symbol "Adafruit_TFT_ST7735_1_1"
 				(pin input line
-					(at 0 20.32 0)
+					(at -8.89 11.43 0)
 					(length 2.54)
-					(name "VCC"
+					(name "LITE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3089,10 +3019,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 24.13 12.7 180)
+				(pin power_in line
+					(at -8.89 -11.43 0)
 					(length 2.54)
-					(name "SD_MOSI"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3108,9 +3038,9 @@
 					)
 				)
 				(pin input line
-					(at 24.13 10.16 180)
+					(at -8.89 -13.97 0)
 					(length 2.54)
-					(name "SD_MISO"
+					(name "SD_MOSI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3126,9 +3056,9 @@
 					)
 				)
 				(pin input line
-					(at 24.13 7.62 180)
+					(at -8.89 -16.51 0)
 					(length 2.54)
-					(name "SD_SCK"
+					(name "SD_SDK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3143,10 +3073,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 17.78 0)
+				(pin output line
+					(at -8.89 8.89 0)
 					(length 2.54)
-					(name "GND"
+					(name "MISO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3162,9 +3092,9 @@
 					)
 				)
 				(pin input line
-					(at 0 15.24 0)
+					(at -8.89 6.35 0)
 					(length 2.54)
-					(name "~{CS}"
+					(name "SCK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3180,9 +3110,9 @@
 					)
 				)
 				(pin input line
-					(at 0 12.7 0)
+					(at -8.89 3.81 0)
 					(length 2.54)
-					(name "RESET"
+					(name "MOSI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3198,9 +3128,9 @@
 					)
 				)
 				(pin input line
-					(at 0 10.16 0)
+					(at -8.89 1.27 0)
 					(length 2.54)
-					(name "A0"
+					(name "TFT_CS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3216,9 +3146,9 @@
 					)
 				)
 				(pin input line
-					(at 0 7.62 0)
+					(at -8.89 -1.27 0)
 					(length 2.54)
-					(name "SDA"
+					(name "CARD_CS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3234,9 +3164,9 @@
 					)
 				)
 				(pin input line
-					(at 0 5.08 0)
+					(at -8.89 -3.81 0)
 					(length 2.54)
-					(name "SCK"
+					(name "D/C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3252,9 +3182,9 @@
 					)
 				)
 				(pin input line
-					(at 0 2.54 0)
+					(at -8.89 -6.35 0)
 					(length 2.54)
-					(name "LED"
+					(name "RESET"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3269,10 +3199,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 24.13 15.24 180)
+				(pin power_in line
+					(at -8.89 -8.89 0)
 					(length 2.54)
-					(name "~{SD_CS}"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3289,12 +3219,114 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
-		(at 228.6 111.76)
+		(at 129.54 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1558855b-3999-4bee-af36-22f0ca973d7e")
+		(uuid "06b39a6c-789e-4148-baba-9d884b7dd881")
+	)
+	(junction
+		(at 146.05 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a764a7d-2105-4397-b7cd-3d6334f5af76")
 	)
 	(junction
 		(at 163.83 44.45)
@@ -3303,16 +3335,22 @@
 		(uuid "2e7d14ed-36df-4f2e-acdc-31026260c896")
 	)
 	(junction
-		(at 228.6 120.65)
+		(at 144.78 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "31203d90-36fb-4f89-8ba6-ce2a733db42d")
+		(uuid "3e84723e-1069-4a34-8b67-4f3ebb278b47")
 	)
 	(junction
 		(at 74.93 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "401148a1-b511-4562-ba98-3501b0ec5621")
+	)
+	(junction
+		(at 158.75 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e24283a-7858-45c4-83c4-28882c6e87e3")
 	)
 	(junction
 		(at 45.72 59.69)
@@ -3344,25 +3382,39 @@
 		(color 0 0 0 0)
 		(uuid "8a3451e6-c3f4-4e41-96ff-645dcc99b84f")
 	)
-	(wire
-		(pts
-			(xy 223.52 55.88) (xy 228.6 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "020353f9-c735-4cba-a888-be8fc045851d")
+	(junction
+		(at 163.83 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9d3f054-15fd-4aca-96a9-88566f40b777")
 	)
-	(wire
-		(pts
-			(xy 242.57 120.65) (xy 242.57 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0446c063-4230-4371-93ee-ed1c5e068324")
+	(no_connect
+		(at 223.52 86.36)
+		(uuid "2f3172e6-2c21-43b2-99aa-24762080942c")
+	)
+	(no_connect
+		(at 223.52 88.9)
+		(uuid "650821e1-f4e1-4b71-a99a-1c447325b6a1")
+	)
+	(no_connect
+		(at 193.04 41.91)
+		(uuid "788caab4-0381-4f84-a6c6-0272a2b98078")
+	)
+	(no_connect
+		(at 142.24 54.61)
+		(uuid "967b057b-23f1-4d4c-9a77-2ada8450d372")
+	)
+	(no_connect
+		(at 142.24 49.53)
+		(uuid "9a240104-5c8f-42a8-8259-fa33aab7323c")
+	)
+	(no_connect
+		(at 142.24 67.31)
+		(uuid "df87ac3d-25ea-432b-a3c3-6c5c0ac89692")
+	)
+	(no_connect
+		(at 142.24 62.23)
+		(uuid "e7c732b5-9c8d-405f-ba42-2c0f24062eca")
 	)
 	(wire
 		(pts
@@ -3426,6 +3478,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 81.28) (xy 223.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d656577-db69-427b-977b-eb4599dffd96")
+	)
+	(wire
+		(pts
 			(xy 105.41 72.39) (xy 106.68 72.39)
 		)
 		(stroke
@@ -3466,16 +3528,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 124.46) (xy 152.4 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "511f1f51-9702-4fca-9690-7d999766aea8")
-	)
-	(wire
-		(pts
 			(xy 74.93 69.85) (xy 74.93 80.01)
 		)
 		(stroke
@@ -3486,33 +3538,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 118.11) (xy 119.38 119.38)
+			(xy 114.3 118.11) (xy 114.3 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "52eab03a-e4c2-4bb5-b04b-2b1f018a8741")
-	)
-	(wire
-		(pts
-			(xy 228.6 111.76) (xy 198.12 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d3826ad-bf20-48c0-a3db-5e0f204fa7a4")
-	)
-	(wire
-		(pts
-			(xy 228.6 109.22) (xy 228.6 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "610e699f-4306-4019-83e1-e303a8775a4b")
 	)
 	(wire
 		(pts
@@ -3526,13 +3558,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 127) (xy 140.97 127)
+			(xy 139.7 124.46) (xy 152.4 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "644f063f-3c89-4c96-94ba-342876b5dac5")
+		(uuid "6c6985a1-53ba-4949-b4f5-4ee25ee0fa7f")
 	)
 	(wire
 		(pts
@@ -3576,17 +3608,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 119.38) (xy 228.6 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "761120cd-8410-4720-959a-2b07d6c9f172")
-	)
-	(wire
-		(pts
-			(xy 119.38 129.54) (xy 119.38 130.81)
+			(xy 114.3 129.54) (xy 114.3 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3616,7 +3638,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 52.07) (xy 142.24 52.07)
+			(xy 142.24 52.07) (xy 144.78 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3626,23 +3648,23 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 53.34) (xy 228.6 53.34)
+			(xy 158.75 44.45) (xy 163.83 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7fa7e656-b43d-48d6-9d92-e50b9bae9965")
+		(uuid "808b55e9-e0b1-4dfa-acda-8774f233c910")
 	)
 	(wire
 		(pts
-			(xy 228.6 120.65) (xy 228.6 124.46)
+			(xy 156.21 50.8) (xy 144.78 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "812b4446-e162-495d-9138-8137fd545777")
+		(uuid "85ca724f-c21f-4475-9959-7756c7b4d75f")
 	)
 	(wire
 		(pts
@@ -3676,6 +3698,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 121.92) (xy 129.54 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "987afd9a-b4bb-4eaa-96f6-5472d0e8ef58")
+	)
+	(wire
+		(pts
 			(xy 45.72 59.69) (xy 45.72 69.85)
 		)
 		(stroke
@@ -3706,6 +3738,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 52.07) (xy 147.32 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b60d4b41-feba-41a7-8f9d-22e20eca3a36")
+	)
+	(wire
+		(pts
 			(xy 195.58 54.61) (xy 194.31 54.61)
 		)
 		(stroke
@@ -3726,6 +3768,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 83.82) (xy 223.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbe7915f-12a5-4fbb-91c6-2df53fadf3cc")
+	)
+	(wire
+		(pts
 			(xy 193.04 46.99) (xy 195.58 46.99)
 		)
 		(stroke
@@ -3736,13 +3788,23 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 41.91) (xy 142.24 41.91)
+			(xy 148.59 41.91) (xy 146.05 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "be218c42-5a3e-4016-af00-065761b55ab0")
+	)
+	(wire
+		(pts
+			(xy 158.75 41.91) (xy 158.75 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be31447d-f39b-479c-bcde-2e9aa76123c9")
 	)
 	(wire
 		(pts
@@ -3766,7 +3828,17 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 138.43) (xy 198.12 134.62)
+			(xy 146.05 129.54) (xy 152.4 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d38a8b22-9913-45f7-b2fb-d8834b72499f")
+	)
+	(wire
+		(pts
+			(xy 148.59 127) (xy 152.4 127)
 		)
 		(stroke
 			(width 0)
@@ -3776,7 +3848,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 139.7) (xy 119.38 138.43)
+			(xy 144.78 50.8) (xy 144.78 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5597ba8-5137-4a7e-81bf-b7c1dcfeccd6")
+	)
+	(wire
+		(pts
+			(xy 114.3 139.7) (xy 114.3 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3786,17 +3868,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 111.76) (xy 242.57 111.76)
+			(xy 146.05 41.91) (xy 142.24 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df556071-45fc-4da2-b46a-63b05639c54e")
+		(uuid "f2cfd229-62c8-4a7e-9426-a63b756fed8d")
 	)
 	(wire
 		(pts
-			(xy 142.24 44.45) (xy 163.83 44.45)
+			(xy 142.24 44.45) (xy 158.75 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3826,23 +3908,13 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 127) (xy 140.97 125.73)
+			(xy 139.7 121.92) (xy 152.4 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f500b6e0-a18b-48ca-bb1b-f6542a5863da")
-	)
-	(wire
-		(pts
-			(xy 228.6 120.65) (xy 242.57 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa5aa7c2-a95d-4993-bd70-222d0d7666be")
+		(uuid "fa8d7557-9585-438c-8603-de507d8b9827")
 	)
 	(global_label "BTN_W"
 		(shape input)
@@ -3954,24 +4026,24 @@
 			)
 		)
 	)
-	(global_label "MOSI"
+	(global_label "D{slash}C"
 		(shape input)
-		(at 252.73 60.96 0)
+		(at 223.52 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "1077b26e-6baa-402d-9f96-2509710b4fb0")
+		(uuid "1404f3a8-7d87-46b0-b583-75b27f1d41b5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.3114 60.96 0)
+			(at 217.2364 76.1206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3998,9 +4070,31 @@
 			)
 		)
 	)
+	(global_label "CARD_CS"
+		(shape input)
+		(at 223.52 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "27db7819-b25b-4fd9-84d0-664aa6dc5ee7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 212.7612 73.5806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED_L"
 		(shape input)
-		(at 119.38 118.11 90)
+		(at 114.3 118.11 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4010,29 +4104,7 @@
 		)
 		(uuid "28ea4dcd-d9fa-4361-9269-bd436148a234")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.3006 110.254 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MISO"
-		(shape input)
-		(at 252.73 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2ec51c77-bc4d-49dc-9de6-a31961ef613b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.3114 63.5 0)
+			(at 114.2206 110.254 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4086,6 +4158,28 @@
 			)
 		)
 	)
+	(global_label "MISO"
+		(shape input)
+		(at 223.52 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "40e7099c-55ad-4565-9afa-6361fbdf0e71")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 216.5107 63.4206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BTN_D"
 		(shape input)
 		(at 35.56 80.01 180)
@@ -4121,6 +4215,28 @@
 		(uuid "4b35aa20-b779-4de7-ad3c-28d915e2bf1f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 98.5821 54.5306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOSI"
+		(shape input)
+		(at 223.52 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4c9a4f83-33d8-41c4-b311-24efdfb5bb94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 216.5107 68.5006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4372,9 +4488,9 @@
 			)
 		)
 	)
-	(global_label "D{slash}C"
+	(global_label "TFT_CS"
 		(shape input)
-		(at 228.6 63.5 180)
+		(at 223.52 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4382,9 +4498,31 @@
 			)
 			(justify right)
 		)
-		(uuid "7c1d31be-e978-4266-9cb3-184e2f05b689")
+		(uuid "75ebaa28-f1cc-4f1d-a8ae-dcb22e5c92a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.3164 63.4206 0)
+			(at 214.6359 71.0406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DIN"
+		(shape input)
+		(at 152.4 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7db7da01-7b23-4775-a0ed-892ce7c2a2ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.7817 119.4594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4438,6 +4576,50 @@
 			)
 		)
 	)
+	(global_label "RESET"
+		(shape input)
+		(at 223.52 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9077a711-dec7-4803-abb3-abe2205e64df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 215.3617 78.6606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LRCLK"
+		(shape input)
+		(at 152.4 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "934d9324-ade9-4680-a435-cf811dda9908")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.1207 114.3794 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GPIO2"
 		(shape input)
 		(at 50.8 157.48 180)
@@ -4478,28 +4660,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RESET"
-		(shape input)
-		(at 228.6 60.96 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a1d7f530-d74b-4f2f-84d0-255001b13f42")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.4417 60.8806 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -4548,50 +4708,6 @@
 			)
 		)
 	)
-	(global_label "LRCLK"
-		(shape input)
-		(at 152.4 119.38 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a4bebc09-0b9e-4f87-8c29-8674d2f70a6c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.1207 119.4594 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MOSI"
-		(shape input)
-		(at 228.6 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b1db3ee0-cb49-41d6-a3ca-218f494b9bd5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 221.5907 65.9606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GPIO1"
 		(shape input)
 		(at 106.68 44.45 180)
@@ -4614,6 +4730,28 @@
 			)
 		)
 	)
+	(global_label "LITE"
+		(shape input)
+		(at 223.52 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c022b20c-47f2-4132-9635-e55644cd4a60")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.3574 60.8806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GPIO3"
 		(shape input)
 		(at 106.68 52.07 180)
@@ -4627,28 +4765,6 @@
 		(uuid "c26b0f42-0e4f-4cbd-bc5f-81bb161717a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 98.5821 51.9906 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCK"
-		(shape input)
-		(at 228.6 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c5384e95-2de2-4ba7-9b97-08a1ec567df1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.4374 68.5006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4724,9 +4840,9 @@
 			)
 		)
 	)
-	(global_label "LITE"
+	(global_label "SCK"
 		(shape input)
-		(at 228.6 71.12 180)
+		(at 223.52 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4734,9 +4850,9 @@
 			)
 			(justify right)
 		)
-		(uuid "deab6499-ba96-4378-9f8a-c93c857f9ba3")
+		(uuid "dee6c3cf-f368-415c-b423-e7cc4d51ad91")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.4374 71.0406 0)
+			(at 217.3574 65.9606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4768,28 +4884,6 @@
 			)
 		)
 	)
-	(global_label "DIN"
-		(shape input)
-		(at 152.4 121.92 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "eb21c0f5-414d-4d6f-9154-daebbf7ebab2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.7817 121.9994 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CARD_CS"
 		(shape input)
 		(at 142.24 74.93 0)
@@ -4803,50 +4897,6 @@
 		(uuid "eb4803fb-71de-46da-9ec0-3d41290afb81")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 152.9988 75.0094 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TFT_CS"
-		(shape input)
-		(at 228.6 58.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ecbe0ae2-cae5-47c6-b5cf-4dae60c8acf9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.7159 58.3406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCK"
-		(shape input)
-		(at 252.73 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f171d704-f4d1-422a-8cd0-7615106f9390")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 259.4647 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4918,28 +4968,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CARD_CS"
-		(shape input)
-		(at 252.73 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fa0334ce-c054-4875-977d-d5a21a73154d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 264.0609 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5046,7 +5074,7 @@
 			(uuid "e328b7da-cea1-40e9-8ab5-8acc419c21ab")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0105")
 					(unit 1)
@@ -5112,140 +5140,9 @@
 			(uuid "7c5687f1-3515-4d9e-a1db-a81d096c9991")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:Power_+3V3")
-		(at 228.6 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "094f4d74-2be5-4ed2-a21a-4e7f690fe126")
-		(property "Reference" "#PWR0117"
-			(at 228.6 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 228.6 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "be7a8927-e6b9-4ca5-904a-137fd90319ac")
-		)
-		(instances
-			(project "sprig_console"
-				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
-					(reference "#PWR0117")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:Power_GND")
-		(at 228.6 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "09d41477-992c-43cd-a5ac-109e41d9eef1")
-		(property "Reference" "#PWR0124"
-			(at 228.6 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 226.06 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5d2661e7-0576-4cfa-ac08-20e4a11d2743")
-		)
-		(instances
-			(project "sprig_console"
-				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
-					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -5279,7 +5176,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "fab:C_1206"
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 164.7952 52.07 0)
 			(effects
 				(font
@@ -5306,6 +5203,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" "104"
+			(at 163.83 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d22e6eb4-2604-4644-a7a9-0f03c8557e15")
 		)
@@ -5313,7 +5219,7 @@
 			(uuid "f8333232-3376-4f0e-916b-729e4d23f2ba")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "C4")
 					(unit 1)
@@ -5374,6 +5280,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 40.64 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0faffea8-849d-4fbb-addc-c61e3a205959")
 		)
@@ -5381,7 +5296,7 @@
 			(uuid "6aeb485b-1051-4386-8ac2-68f58cd55476")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW1")
 					(unit 1)
@@ -5447,7 +5362,7 @@
 			(uuid "ab4ffa0f-2b6e-4b2d-9829-145e2a44f18b")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0114")
 					(unit 1)
@@ -5513,9 +5428,74 @@
 			(uuid "41a1f9ed-f505-4ded-9216-bdfd11a6c678")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fab:Power_+3V3")
+		(at 217.17 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "288442ac-8ae6-4286-a852-0806e4941716")
+		(property "Reference" "#PWR0123"
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 208.28 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 217.17 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "491c80b9-ca34-49b4-b0d2-a6dae0462a30")
+		)
+		(instances
+			(project ""
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -5578,74 +5558,9 @@
 			(uuid "18b66b91-f4e1-4c5b-a8f7-94ed13318d96")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:Power_+3V3")
-		(at 223.52 53.34 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "360f1417-8228-4861-bd63-00d5bb25b553")
-		(property "Reference" "#PWR02"
-			(at 227.33 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 217.424 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8eff925-b521-4e94-85cd-c0ed9d2df101")
-		)
-		(instances
-			(project "sprig_console"
-				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5677,7 +5592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "slideSWSMD:slideswitchCK"
+		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
 			(at 187.96 44.45 0)
 			(effects
 				(font
@@ -5704,6 +5619,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 187.96 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a3191020-32a4-4d7c-80f0-1b72c32516b9")
 		)
@@ -5714,7 +5638,7 @@
 			(uuid "05700b96-27c1-4cfd-9b4e-acce292f2188")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW9")
 					(unit 1)
@@ -5779,7 +5703,7 @@
 			(uuid "4be51cb7-459b-48f8-a5f2-8e0f490baecf")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0118")
 					(unit 1)
@@ -5845,9 +5769,74 @@
 			(uuid "ad9c236e-bc99-4c14-a98d-6497c553eb20")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 156.21 50.8 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "398e5324-2194-4f59-b501-571e6f6061e9")
+		(property "Reference" "#FLG04"
+			(at 156.21 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 156.21 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 156.21 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eefaf9a3-7102-45bd-884d-e27d7883a0ae")
+		)
+		(instances
+			(project "sprig_console"
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -5907,6 +5896,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 200.66 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1d0fb4e1-bbc7-46b3-aabf-57da413e43e6")
 		)
@@ -5920,7 +5918,7 @@
 			(uuid "bc29f39c-4c64-40ae-ab2e-de96b2a7e9f0")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "J1")
 					(unit 1)
@@ -5929,32 +5927,34 @@
 		)
 	)
 	(symbol
-		(lib_id "fab:R_1206")
-		(at 119.38 124.46 0)
+		(lib_id "power:PWR_FLAG")
+		(at 158.75 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4f81dd05-a82f-4a71-8e1f-1935b37f2c42")
-		(property "Reference" "R4"
-			(at 115.57 125.73 0)
+		(fields_autoplaced yes)
+		(uuid "3e26eb6d-fcb4-4ca6-9678-589698b92e3d")
+		(property "Reference" "#FLG02"
+			(at 158.75 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 158.75 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at 115.57 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "fab:R_1206"
-			(at 119.38 124.46 90)
+		(property "Footprint" ""
+			(at 158.75 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5963,7 +5963,138 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 124.46 0)
+			(at 158.75 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 158.75 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30865170-25ac-4937-9183-1c81f013754b")
+		)
+		(instances
+			(project "sprig_console"
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 163.83 52.07 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ec4f1af-7b5d-4d99-855f-148b5e6e1a3c")
+		(property "Reference" "#FLG03"
+			(at 165.735 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 167.64 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 163.83 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfce9aec-3691-4a69-a23e-4bca88a9ffff")
+		)
+		(instances
+			(project ""
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fab:R_1206")
+		(at 114.3 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f81dd05-a82f-4a71-8e1f-1935b37f2c42")
+		(property "Reference" "R4"
+			(at 110.49 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 114.3 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5972,7 +6103,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 124.46 0)
+			(at 114.3 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Silkscreen Value" ""
+			(at 114.3 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5987,7 +6127,7 @@
 			(uuid "d236163e-758e-4162-8996-495a0fbd245f")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "R4")
 					(unit 1)
@@ -6021,7 +6161,7 @@
 				)
 			)
 		)
-		(property "Footprint" "local:QFN50P300X300X80-17N"
+		(property "Footprint" "Library:Max98357A_ClassD_I2S_Mono_Amp_BreakoutBoard"
 			(at 175.26 121.92 0)
 			(effects
 				(font
@@ -6110,26 +6250,23 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 175.26 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "74e9e3a6-ff22-49cc-9433-b34a29d1e93f")
 		)
-		(pin "10"
+		(pin "5"
 			(uuid "87e1f3d2-6925-4843-a107-9e6b0f7fcc4b")
 		)
-		(pin "11"
+		(pin "6"
 			(uuid "771e1743-eb47-4956-9e2b-bf0d017fb3b9")
-		)
-		(pin "14"
-			(uuid "90f1e69c-4d6c-4e0a-9b71-232643da3ed9")
-		)
-		(pin "15"
-			(uuid "f82003a5-2381-4173-a4b3-be81a0b7ef82")
-		)
-		(pin "16"
-			(uuid "3d9a84d0-e065-4334-b747-d9c52de00204")
-		)
-		(pin "17"
-			(uuid "4d1d9ddd-e542-4047-b6b7-cc8b8bb9ca3d")
 		)
 		(pin "2"
 			(uuid "16d372e9-4eb5-4ba2-9ba9-39545e3a143b")
@@ -6150,7 +6287,7 @@
 			(uuid "d832cccc-5ffc-4a63-a80f-380af80e2e04")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "U2")
 					(unit 1)
@@ -6216,79 +6353,9 @@
 			(uuid "3a889819-cc81-48c8-840f-2f77edc9e72d")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:C")
-		(at 228.6 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5fa73bb9-0b3b-407f-9fdf-856a20fa5752")
-		(property "Reference" "C2"
-			(at 232.41 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 232.41 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "fab:C_1206"
-			(at 229.5652 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0ff78b1-6a01-4f9b-99c1-9a87b0c569c0")
-		)
-		(pin "2"
-			(uuid "c7979d2f-5a61-4f79-bdfb-b216613e9a8b")
-		)
-		(instances
-			(project "sprig_console"
-				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
-					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -6347,6 +6414,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 69.85 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3f1e1221-1f3f-471c-95ba-f9b2820f5cc9")
 		)
@@ -6354,7 +6430,7 @@
 			(uuid "6d7360fd-0a51-4ad6-8450-e7ea4cd84da0")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW7")
 					(unit 1)
@@ -6387,7 +6463,7 @@
 				)
 			)
 		)
-		(property "Footprint" "fab:R_1206"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 97.79 124.46 90)
 			(effects
 				(font
@@ -6414,6 +6490,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 97.79 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "35db661b-8937-4bec-b5b8-0463f4a34e90")
 		)
@@ -6421,7 +6506,7 @@
 			(uuid "352393ad-3a1b-410f-83eb-e7e849c8750c")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "R3")
 					(unit 1)
@@ -6431,7 +6516,7 @@
 	)
 	(symbol
 		(lib_id "fab:LED_1206")
-		(at 119.38 134.62 90)
+		(at 114.3 134.62 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6440,7 +6525,7 @@
 		(fields_autoplaced yes)
 		(uuid "67d227ca-5e77-48bb-9d3f-d65725312987")
 		(property "Reference" "D2"
-			(at 123.19 134.9501 90)
+			(at 118.11 134.9501 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6449,7 +6534,7 @@
 			)
 		)
 		(property "Value" "L_LED"
-			(at 123.19 137.4901 90)
+			(at 118.11 137.4901 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6457,8 +6542,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "fab:LED_1206"
-			(at 119.38 134.62 0)
+		(property "Footprint" "PCM_4ms_LED:LED_3mm_C1A2_Polarity_Indicator"
+			(at 114.3 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6467,7 +6552,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf"
-			(at 119.38 134.62 0)
+			(at 114.3 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6476,7 +6561,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 134.62 0)
+			(at 114.3 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Silkscreen Value" ""
+			(at 114.3 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6491,7 +6585,7 @@
 			(uuid "b861c735-0080-4386-ad36-1f50c478bf35")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "D2")
 					(unit 1)
@@ -6557,9 +6651,85 @@
 			(uuid "4917ce83-e095-491f-ada9-ed09f431203e")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fab:R_1206")
+		(at 134.62 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6bd53a48-2c63-4f91-a6e5-52e0c518cb4d")
+		(property "Reference" "R2"
+			(at 134.62 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 134.62 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 134.62 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Silkscreen Value" ""
+			(at 134.62 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df5f1ef4-1f3d-4e5a-9beb-c429529b4f33")
+		)
+		(pin "2"
+			(uuid "7893ecb5-98a2-453a-abfa-ef65ca096f74")
+		)
+		(instances
+			(project "sprig_console"
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6593,7 +6763,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "fab:LED_1206"
+		(property "Footprint" "PCM_4ms_LED:LED_3mm_C1A2_Polarity_Indicator"
 			(at 97.79 134.62 0)
 			(effects
 				(font
@@ -6620,6 +6790,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 97.79 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9b61eeca-1204-4b53-99ef-9a5271737337")
 		)
@@ -6627,7 +6806,7 @@
 			(uuid "7150abf0-9cad-4a9c-add5-432cdba56f9d")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "D1")
 					(unit 1)
@@ -6636,106 +6815,8 @@
 		)
 	)
 	(symbol
-		(lib_id "sprig:TFT_MSP1803")
-		(at 228.6 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7194c92e-5bd9-4d92-a2c6-25b5cd238dd6")
-		(property "Reference" "U1"
-			(at 240.665 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 240.665 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "sprig:TFT_MSP1803"
-			(at 228.6 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "e717bdcd-987d-4a2d-8602-6c42732f175e")
-		)
-		(pin "11"
-			(uuid "2d583b0c-dc23-43ba-8767-8774d86c855d")
-		)
-		(pin "4"
-			(uuid "6771a7f0-efde-45e2-ae14-e3b75d460660")
-		)
-		(pin "1"
-			(uuid "96d8d324-38fd-4954-9f11-eed22cd63339")
-		)
-		(pin "6"
-			(uuid "4c67ed5c-7cab-4977-8ead-821dc132eaad")
-		)
-		(pin "5"
-			(uuid "7306755a-6e96-492f-93af-c47f221f0222")
-		)
-		(pin "3"
-			(uuid "c5082693-76cd-41f3-9296-728af9a5c194")
-		)
-		(pin "7"
-			(uuid "6742e351-59cc-469e-97a1-9ad964288ae5")
-		)
-		(pin "8"
-			(uuid "65f53058-b0b4-491c-b442-053f1c68d19f")
-		)
-		(pin "12"
-			(uuid "6290c4a9-7362-4b6c-a457-9dddff95c72b")
-		)
-		(pin "9"
-			(uuid "f8c5b900-b529-4fa9-895f-e5c7aa742a2b")
-		)
-		(pin "2"
-			(uuid "c8002fba-d131-4b35-a7b4-fb50bc3146ae")
-		)
-		(instances
-			(project "sprig_console"
-				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "fab:Power_+3V3")
-		(at 140.97 115.57 0)
+		(at 129.54 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6743,7 +6824,7 @@
 		(dnp no)
 		(uuid "73c6a3e6-80c1-4989-ab13-8523c7e6e5f4")
 		(property "Reference" "#PWR0122"
-			(at 140.97 119.38 0)
+			(at 133.35 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6752,7 +6833,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 134.62 110.49 0)
+			(at 123.952 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6760,7 +6841,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 115.57 0)
+			(at 129.54 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6769,7 +6850,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 115.57 0)
+			(at 129.54 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6778,7 +6859,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 115.57 0)
+			(at 129.54 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6790,7 +6871,7 @@
 			(uuid "23d962e1-b5c5-4b63-8b7f-b346861d1395")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0122")
 					(unit 1)
@@ -6800,7 +6881,7 @@
 	)
 	(symbol
 		(lib_id "fab:Power_GND")
-		(at 119.38 139.7 0)
+		(at 114.3 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6808,7 +6889,7 @@
 		(dnp no)
 		(uuid "7555be32-5ec6-4096-a323-1fd08d7422af")
 		(property "Reference" "#PWR0133"
-			(at 119.38 146.05 0)
+			(at 114.3 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6817,7 +6898,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 144.78 0)
+			(at 111.76 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6826,7 +6907,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 139.7 0)
+			(at 114.3 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6835,7 +6916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 139.7 0)
+			(at 114.3 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6844,7 +6925,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 139.7 0)
+			(at 114.3 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6856,7 +6937,7 @@
 			(uuid "190bcb7b-1968-46db-acb3-40b69b1f2318")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0133")
 					(unit 1)
@@ -6909,6 +6990,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 124.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Silkscreen Value" ""
 			(at 124.46 66.04 0)
 			(effects
 				(font
@@ -7038,7 +7128,7 @@
 			(uuid "cd9433a2-b964-4a0b-bf25-09acb848ff5b")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "U5")
 					(unit 1)
@@ -7104,7 +7194,7 @@
 			(uuid "0083e94b-c20e-4d5a-94c0-3249eb09d775")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0119")
 					(unit 1)
@@ -7130,7 +7220,7 @@
 				)
 			)
 		)
-		(property "Value" "SD1206T020S1R0"
+		(property "Value" "1N5819"
 			(at 172.4025 40.64 0)
 			(effects
 				(font
@@ -7138,7 +7228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "fab:Diode_Schotky_100V_1A_Mini_SMA"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 172.72 44.45 0)
 			(effects
 				(font
@@ -7165,6 +7255,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 172.72 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "854c8829-725c-43a9-9fc5-c324d25b9b34")
 		)
@@ -7172,7 +7271,7 @@
 			(uuid "4bc86510-eacc-4743-bf0b-cadae3d7b4b3")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "D3")
 					(unit 1)
@@ -7238,79 +7337,9 @@
 			(uuid "673e8bfa-a3db-4244-9edc-98c61c3e6d0b")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0113")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:C")
-		(at 242.57 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87993553-3de2-43e7-9acd-8333dc1b74c0")
-		(property "Reference" "C3"
-			(at 246.38 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 246.38 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "fab:C_1206"
-			(at 243.5352 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 242.57 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 242.57 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d0d38188-25c4-4d31-8b3d-ea0bf98f7e2c")
-		)
-		(pin "2"
-			(uuid "5d917f21-e47c-48b5-81a5-34d6bf78abf6")
-		)
-		(instances
-			(project "sprig_console"
-				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
-					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -7374,7 +7403,7 @@
 			(uuid "0e9ffdea-081d-4288-92b9-5c85b3c4402f")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0116")
 					(unit 1)
@@ -7435,6 +7464,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 40.64 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d0a12dd5-409b-4335-b064-cb33ef25ff48")
 		)
@@ -7442,7 +7480,7 @@
 			(uuid "b2ca893d-1381-4d76-a006-09f619d0a97d")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW2")
 					(unit 1)
@@ -7508,141 +7546,9 @@
 			(uuid "20adf0f7-6508-462a-abaa-7d4ea4f822f6")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0132")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:Power_GND")
-		(at 223.52 55.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a809bf59-8634-4794-8e47-766463aa95e9")
-		(property "Reference" "#PWR01"
-			(at 217.17 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 216.154 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "041705e9-d3f4-4ce0-b8d5-0093726eb271")
-		)
-		(instances
-			(project "sprig_console"
-				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:Power_GND")
-		(at 151.13 124.46 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ac9b6272-6214-4835-a4dd-7796576e82c8")
-		(property "Reference" "#PWR0120"
-			(at 144.78 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 143.51 124.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 151.13 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d5d6c2e7-f296-4314-9c95-cbb731bc3aff")
-		)
-		(instances
-			(project "sprig_console"
-				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
-					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -7667,7 +7573,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 46.99 90)
+			(at 150.622 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7706,7 +7612,7 @@
 			(uuid "99ae9c0e-5a0f-40d4-ab75-aa814ca61b84")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0108")
 					(unit 1)
@@ -7772,7 +7678,7 @@
 			(uuid "5c86278a-e95b-4086-8e47-50a9decbf601")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0111")
 					(unit 1)
@@ -7833,6 +7739,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 69.85 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5d33d8ef-5f94-444f-acc2-3a9bad104b0d")
 		)
@@ -7840,7 +7755,7 @@
 			(uuid "ae85b47e-083f-40d7-9787-816d9ecddbb3")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW5")
 					(unit 1)
@@ -7876,7 +7791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "fab:CVS-1508"
+		(property "Footprint" "Library:1W_8Ohm_Speaker"
 			(at 205.74 121.92 0)
 			(effects
 				(font
@@ -7903,6 +7818,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 205.74 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "674da0b8-d666-4bd8-b2d7-46c3faf72158")
 		)
@@ -7910,7 +7834,7 @@
 			(uuid "389caea6-4a84-48af-a0a6-a7981e39fee0")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "LS1")
 					(unit 1)
@@ -7920,7 +7844,7 @@
 	)
 	(symbol
 		(lib_id "fab:Power_+3V3")
-		(at 143.51 52.07 270)
+		(at 147.32 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7928,7 +7852,7 @@
 		(dnp no)
 		(uuid "b7d341c3-bfde-4ce2-9ade-5f5a1d66e1fb")
 		(property "Reference" "#PWR0101"
-			(at 139.7 52.07 0)
+			(at 143.51 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7945,7 +7869,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 52.07 0)
+			(at 147.32 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7954,7 +7878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 52.07 0)
+			(at 147.32 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7963,7 +7887,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 52.07 0)
+			(at 147.32 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7975,7 +7899,7 @@
 			(uuid "77b18683-3a03-4de4-a1d1-4bfbc458a60b")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0101")
 					(unit 1)
@@ -7985,7 +7909,7 @@
 	)
 	(symbol
 		(lib_id "fab:R_1206")
-		(at 140.97 120.65 0)
+		(at 134.62 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7993,7 +7917,7 @@
 		(dnp no)
 		(uuid "b869d606-8034-4bf7-bf7a-48f556d814ab")
 		(property "Reference" "R1"
-			(at 137.16 121.92 0)
+			(at 134.62 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8001,15 +7925,15 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 137.16 119.38 0)
+			(at 134.62 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "fab:R_1206"
-			(at 140.97 120.65 90)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 134.62 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8018,7 +7942,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 120.65 0)
+			(at 134.62 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8027,7 +7951,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 120.65 0)
+			(at 134.62 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Silkscreen Value" ""
+			(at 134.62 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8042,7 +7975,7 @@
 			(uuid "2adc686b-ad87-4eee-b7f4-327e42d2d4a0")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "R1")
 					(unit 1)
@@ -8051,16 +7984,16 @@
 		)
 	)
 	(symbol
-		(lib_id "fab:Power_GND")
-		(at 198.12 138.43 0)
+		(lib_id "fab:Power_+3V3")
+		(at 146.05 129.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c97005ec-8d69-42af-899c-a1e98103d4c4")
-		(property "Reference" "#PWR0121"
-			(at 198.12 144.78 0)
+		(uuid "b96e6f59-c555-4741-9b4c-ae3e980e6a8b")
+		(property "Reference" "#PWR02"
+			(at 149.86 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8068,17 +8001,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 195.58 143.51 0)
+		(property "Value" "+3V3"
+			(at 140.97 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 138.43 0)
+			(at 146.05 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8087,7 +8019,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 138.43 0)
+			(at 146.05 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8096,7 +8028,248 @@
 			)
 		)
 		(property "Description" ""
-			(at 198.12 138.43 0)
+			(at 146.05 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4a126f3-9a03-4741-b52c-be8ff897524e")
+		)
+		(instances
+			(project "sprig_console"
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fab_custom:Adafruit_TFT_ST7735")
+		(at 232.41 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c061cf62-6b2b-4552-b021-064db799583c")
+		(property "Reference" "U1"
+			(at 240.03 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Adafruit_TFT_ST7735"
+			(at 240.03 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:Generic_1.8Inch_TFT_120x160"
+			(at 232.41 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Silkscreen Value" ""
+			(at 232.41 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ee85173-062e-420e-afbb-5608ce93fa56")
+		)
+		(pin "10"
+			(uuid "d7ce5c27-5955-4713-9a19-23cfd458e2b1")
+		)
+		(pin "2"
+			(uuid "48e969a2-43af-4ce1-8a9c-2e53ac20c0a2")
+		)
+		(pin "3"
+			(uuid "2a2146eb-85f6-4c87-8571-2f05d5b75191")
+		)
+		(pin "4"
+			(uuid "90c22dfe-892c-4e64-9398-b126c4f34633")
+		)
+		(pin "5"
+			(uuid "b883507b-04f9-41e2-9cf9-0842a620eb9e")
+		)
+		(pin "6"
+			(uuid "fefcb863-087e-48ed-b79c-9ce5804b87fc")
+		)
+		(pin "7"
+			(uuid "4db944c7-d350-458e-a14e-ab2a8db75f70")
+		)
+		(pin "8"
+			(uuid "45230b1b-b2e3-495e-a573-f1b5fcd75f8a")
+		)
+		(pin "9"
+			(uuid "16a5df06-3799-424d-b5f3-373f77a67043")
+		)
+		(pin "12"
+			(uuid "ef848056-2299-4c9f-87a5-5d6dad1781a1")
+		)
+		(pin "11"
+			(uuid "26d96807-3ada-43b3-a960-8b82668df2dc")
+		)
+		(instances
+			(project ""
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fab:Power_GND")
+		(at 218.44 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3794372-c4df-4995-a476-529d86f86055")
+		(property "Reference" "#PWR0104"
+			(at 212.09 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 210.82 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a19ee953-e6f8-4154-bb75-86a1792a91fa")
+		)
+		(instances
+			(project ""
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fab:Power_GND")
+		(at 148.59 127 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c97005ec-8d69-42af-899c-a1e98103d4c4")
+		(property "Reference" "#PWR0121"
+			(at 142.24 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8108,7 +8281,7 @@
 			(uuid "4ece4375-96b9-455f-9696-9ef9e76bdadb")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0121")
 					(unit 1)
@@ -8169,6 +8342,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 40.64 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "79c574a5-e2d8-4144-9ddb-1cfe28d6f07f")
 		)
@@ -8176,7 +8358,7 @@
 			(uuid "472db3df-0a06-4e47-8641-ebe2e57f8a77")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW3")
 					(unit 1)
@@ -8210,7 +8392,7 @@
 				)
 			)
 		)
-		(property "Footprint" "fab:PinHeader_2x03_P2.54mm_Vertical_SMD"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
 			(at 55.88 157.48 0)
 			(effects
 				(font
@@ -8229,6 +8411,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Silkscreen Value" ""
 			(at 55.88 157.48 0)
 			(effects
 				(font
@@ -8256,7 +8447,7 @@
 			(uuid "67d4b686-dbf4-4f80-a019-0080c29c2fd5")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "J2")
 					(unit 1)
@@ -8322,7 +8513,7 @@
 			(uuid "cc05f380-f56b-4aa0-90b3-5512a23ad933")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0112")
 					(unit 1)
@@ -8383,6 +8574,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 69.85 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "14b487e4-38c7-4d8c-adbf-294b08ebbccf")
 		)
@@ -8390,9 +8590,75 @@
 			(uuid "0ce4247a-d99d-4d3c-9626-b9c55b4ad12a")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 146.05 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e325a038-44a8-4ec9-be3c-c4fff9ff46b5")
+		(property "Reference" "#FLG01"
+			(at 146.05 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 146.05 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 146.05 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7897f20-033a-42a7-9868-300c7e4e8f20")
+		)
+		(instances
+			(project ""
+				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -8456,7 +8722,7 @@
 			(uuid "7b70e99f-e760-45de-bef9-4ad19e4cc5cd")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0107")
 					(unit 1)
@@ -8517,6 +8783,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 69.85 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "90028c13-004b-41c0-ad5d-7114c0becb3a")
 		)
@@ -8524,7 +8799,7 @@
 			(uuid "937a19db-bc90-42ce-bd16-9b416e14a90c")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW6")
 					(unit 1)
@@ -8560,7 +8835,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "fab:C_1206"
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 82.2452 129.54 0)
 			(effects
 				(font
@@ -8587,6 +8862,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" "104"
+			(at 81.28 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "92aac27f-5f67-4353-bea0-90ec51f36ac5")
 		)
@@ -8594,7 +8878,7 @@
 			(uuid "47a3116b-591f-4e2b-87fc-f1149e041d2c")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "C1")
 					(unit 1)
@@ -8660,7 +8944,7 @@
 			(uuid "5a45879b-a698-48da-ae94-cd5330191450")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "#PWR0110")
 					(unit 1)
@@ -8721,6 +9005,15 @@
 				(hide yes)
 			)
 		)
+		(property "Silkscreen Value" ""
+			(at 40.64 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "363b538c-c436-4f5b-bb08-38111b62136f")
 		)
@@ -8728,7 +9021,7 @@
 			(uuid "2a0606a6-ce20-4443-892f-8bde8a5ad1e6")
 		)
 		(instances
-			(project "sprig_console"
+			(project ""
 				(path "/a1398d0e-4ade-4de2-8061-d69a6d1dd967"
 					(reference "SW4")
 					(unit 1)

@@ -1,8 +1,8 @@
 /*
 @title: alien_invaders
-@author: stati30241
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-09-28
+@author: stati30241
 
 Controls:
  - A to move left

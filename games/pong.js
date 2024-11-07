@@ -1,8 +1,8 @@
 /*
 @title: pong
-@author: neesh
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-09-07
+@author: neesh
 */
 
 const player1 = "1";

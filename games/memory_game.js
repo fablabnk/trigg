@@ -1,8 +1,4 @@
 /*
-@title: Memory Game
-@author: uped
-@tags: []
-@addedOn: 2024-06-18
 Memory Game!
 pair matching cards to earn score
 
@@ -10,6 +6,10 @@ Controls:
 wasd to move
 i to interact
 
+@title: Memory Game
+@author: uped
+@tags: []
+@addedOn: 2024-06-18
 */
 
 const question_mark = "?"

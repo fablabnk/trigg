@@ -2,7 +2,7 @@
 /* 
 @title: turtle_game_reach_the_beach
 @author: Daniel Dunavetsky
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2023-10-25
 */
 

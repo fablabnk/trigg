@@ -2,7 +2,7 @@
 /* 
 @title: Solstice_game
 @author: Stephanie Zhou
-@tags: ['puzzle']
+@tags: ['maze']
 @addedOn: 2024-07-022
 */
 

@@ -1,7 +1,7 @@
 /*
 @title: 2p-snake
 @author: Sigfredo feat. whatware
-@tags: ['multiplayer']
+@tags: ['multiplayer', 'snake', '2p', 'co-op']
 @addedOn: 2024-08-13
 */
 

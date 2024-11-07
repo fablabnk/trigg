@@ -1,8 +1,8 @@
 /*
 @title: snek
-@author: userjhansen
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-08-30
+@author: userjhansen
 
 get the fruit
 */

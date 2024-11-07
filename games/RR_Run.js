@@ -1,12 +1,12 @@
 /*
-@title: RR Run
-@author: Weston Bui
-@tags: ['puzzle']
-@addedOn: 2024-05-10
 First time? Check out the tutorial game:
 https://sprig.hackclub.com/gallery/getting_started
 
+@title: RR Run
+@author: Weston Bui
+@tags: ['puzzle']
 @img: ""
+@addedOn: 2024-05-10
 */
 
 const player = "p"

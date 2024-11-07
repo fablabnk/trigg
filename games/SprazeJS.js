@@ -1,8 +1,8 @@
 /*
 @title: Spraze
-@author: Peipr (@peiprjs)
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2022-08-29
+@author: Peipr (@peiprjs)
 */
 /*---------------------------------------------------------------------------*/
 const player = "p";

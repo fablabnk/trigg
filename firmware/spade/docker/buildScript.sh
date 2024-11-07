@@ -1,9 +1,7 @@
-#!/usr/bin/env sh
-
-cd ~/sprig/firmware/spade
+cd ~/spade
 ./src/pc/jerry/refresh.sh
 
-cd ~/sprig/firmware/spade
+cd ~/spade
 ./src/rpi/jerry/refresh.sh
 
 touch game.js
@@ -15,7 +13,5 @@ mkdir -p src/shared/sprig_engine/build
 cmake --preset=rpi
 cmake --build --preset=rpi
 
-cp rpi_build/src/spade.uf2 ~/firmware.uf2
-cp ~/firmware.uf2 firmware.uf2
-cp rpi_build/src/spade.elf ~/firmware.elf
-cp ~/firmware.elf firmware.elf
+cp rpi_build/src/spade.uf2 ~/spade
+cp rpi_build/src/spade.elf ~/spade

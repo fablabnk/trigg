@@ -1,8 +1,8 @@
 /*
 @title: minesweeper
-@author: sam liu
-@tags: ['retro']
+@tags: ['classic']
 @addedOn: 2022-08-29
+@author: sam liu
 
 Your typical Minesweeper game
 9x9, 10 bombs

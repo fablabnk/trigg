@@ -1,7 +1,7 @@
 /*
 @title: Darkening Descent
 @author: noxi
-@tags: ['role-playing','adventure']
+@tags: ["advanced", "roguelite"]
 @addedOn: 2024-07-07
 */
 

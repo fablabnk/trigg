@@ -1,8 +1,8 @@
 /*
 @title: Nomis
-@author: Cheru Berhanu
-@tags: ['retro']
+@tags: ['classic', 'hackable']
 @addedOn: 2022-08-29
+@author: Cheru Berhanu
 */
 
 const green = "a";

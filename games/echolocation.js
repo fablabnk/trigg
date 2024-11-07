@@ -1,8 +1,8 @@
 /*
 @title: echolocation
-@author: Leonard (Omay)
-@tags: ['puzzle']
+@tags: ['logic']
 @addedOn: 2022-11-13
+@author: Leonard (Omay)
 
 find the goal
 ijkl to "look"

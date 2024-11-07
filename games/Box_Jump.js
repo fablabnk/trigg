@@ -1,8 +1,8 @@
 /*
 @title: Box Jump
-@author: Elijah Schneider
-@tags: ['puzzle']
+@tags: ['puzzle-score']
 @addedOn: 2022-12-19
+@author: Elijah Schneider 
 
 Instructions:
 

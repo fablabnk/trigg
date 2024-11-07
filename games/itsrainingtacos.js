@@ -1,7 +1,7 @@
 /*
 @title: It's Raining Tacos
 @author: omarko
-@tags: ['action','survival']
+@tags: ["Dodge","Survival","Shooter"]
 @addedOn: 2024-08-05
 */
 

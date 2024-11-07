@@ -1,8 +1,8 @@
 /*
 @title: reversi
-@author: veehj
-@tags: ['multiplayer','retro']
+@tags: ['classic', 'multiplayer']
 @addedOn: 2022-09-13
+@author: veehj
 */
 
 const game = {

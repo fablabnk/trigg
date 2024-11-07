@@ -1,9 +1,9 @@
 /*
 @title: Castle_Drop
 @author: aISaidJak
-@tags: ['action']
-@addedOn: 2024-05-14
+@tags: ["dodge"]
 @img: ""
+@addedOn: 2024-05-14
 */
 const player = "p"
 const window = "w"

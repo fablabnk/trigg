@@ -1,7 +1,7 @@
 /*
 @title: Rythym-Mania
 @author: sosenteam
-@tags: ['action','music']
+@tags: ["rythym-game","fun"]
 @addedOn: 2024-7-18
 
 GOAL: HIT THE CORRECT KEY WHEN THE NOTES FALL ONTO THE BLOCKS

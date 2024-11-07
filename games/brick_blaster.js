@@ -1,7 +1,7 @@
 /*
 @title: Brick Blaster
 @author: MohammedMMc
-@tags: ['real-time','action']
+@tags: ["brick", "blaster", "brick-blaster"]
 @addedOn: 2024-08-28
 */
 

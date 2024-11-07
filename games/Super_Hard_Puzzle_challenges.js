@@ -2,7 +2,7 @@
 /* 
 @title: Super_Hard_Puzzle_challenges
 @author: Ruihan Cao
-@tags: ['puzzle']
+@tags: ['puzzle-score']
 @addedOn: 2023-04-23
 */
 

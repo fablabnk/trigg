@@ -61,25 +61,18 @@ export interface OpenEditor {
 	text: string
 }
 
-export enum PersistenceStateKind {
-	IN_MEMORY = 'IN_MEMORY',
-	PERSISTED = 'PERSISTED',
-	SHARED = 'SHARED',
-	COLLAB = 'COLLAB'
-}
-
 // Persistence
 export type PersistenceState = ({
-	kind: PersistenceStateKind.IN_MEMORY
+	kind: 'IN_MEMORY'
 	showInitialWarning: boolean
 } | {
-	kind: PersistenceStateKind.PERSISTED
+	kind: 'PERSISTED'
 	cloudSaveState: 'SAVED' | 'SAVING' | 'ERROR'
 	game: 'LOADING' | Game,
 	tutorial?: string[] | undefined,
 	tutorialIndex?: number | undefined
 } | {
-	kind: PersistenceStateKind.SHARED
+	kind: 'SHARED'
 	name: string
 	authorName: string
 	code: string,
@@ -87,10 +80,9 @@ export type PersistenceState = ({
 	tutorialName?: string | undefined
 	tutorialIndex?: number | undefined
 } | {
-	kind: PersistenceStateKind.COLLAB
+	kind: 'COLLAB'
 	game: string | 'LOADING' | Game // String means the game is restricted and only the roomId needs to be shown to the user
 	password: string | undefined
-	cloudSaveState: 'SAVED' | 'SAVING' | 'ERROR'
 }) & {
 	session: SessionInfo | null
 	stale: boolean
@@ -112,11 +104,6 @@ export type RoomState = {
 	connectionStatus: ConnectionStatus
 	roomId: string
 	participants: RoomParticipant[]
-}
-
-export type GithubState = {
-	username: string,
-	session: string
 }
 
 export const codeMirror = signal<EditorView | null>(null)

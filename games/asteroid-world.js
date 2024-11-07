@@ -1,7 +1,7 @@
 /*
 @title: Astroid World
 @author: Shaurya
-@tags: []
+@tags: ["space"]
 @addedOn: 2024-08-06
 */
 

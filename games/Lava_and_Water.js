@@ -1,8 +1,8 @@
 /*
-@title: Lava and Water
-@author: Akeell
-@tags: ['puzzle','multiplayer','retro']
+@title: Lava and Water  
+@tags: ['puzzle-2players', 'classic']
 @addedOn: 2022-10-15
+@author: Akeell 
 */
 
 /* 

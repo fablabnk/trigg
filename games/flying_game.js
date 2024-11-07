@@ -1,8 +1,8 @@
 /*
 @title: Flying Game
-@author: Zainab Khorakiwala
-@tags: ['puzzle']
+@tags: ['sokoban-style']
 @addedOn: 2022-10-08
+@author: Zainab Khorakiwala
 */
 
 const player = "p";

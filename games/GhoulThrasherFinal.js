@@ -1,7 +1,7 @@
 /*
 @title: Ghoul Thrasher
 @author: Kushagra
-@tags: ['role-playing','action','adventure']
+@tags: ['dungeon', 'rougelike', 'shooter']
 @addedOn: 2024-08-06
 */
 
