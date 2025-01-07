@@ -5203,7 +5203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Silkscreen Value" "104"
+		(property "Silkscreen Value" "105"
 			(at 163.83 48.26 0)
 			(effects
 				(font
@@ -8862,7 +8862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Silkscreen Value" "104"
+		(property "Silkscreen Value" "105"
 			(at 81.28 125.73 0)
 			(effects
 				(font
